@@ -1,0 +1,138 @@
+ 
+    body {
+      margin: 1%;
+      overflow: hidden;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #000;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      min-height: 100vh;
+      background-color: #000;
+      background-image: url( https://raw.githubusercontent.com/Ve-nator/Aiwon.github.io/main/stars.jpg );  
+      background-repeat: no-repeat;
+        background-attachment: fixed;
+      background-position: center center;
+	  background-size: cover;
+  background-repeat: no-repeat;
+ 
+    }
+
+     
+    canvas {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+  
+
+
+    #background {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+    }
+
+    .profile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 40px;
+    }
+
+    .profile img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+	   
+    }
+
+    .profile p {
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+	  
+    }
+
+    .link-container {
+      width: 600px;
+      padding: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 20px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .link-container::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(45deg, #ff0000, #00ff00, #0000ff, #ff0000);
+      background-size: 800% 800%;
+      animation: gradientAnimation 5s infinite;
+      border-radius: 50px;
+      opacity: 0.2;
+      z-index: -1;
+    }
+
+    .link {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+    }
+
+    .link img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      transition: transform 0.2s ease;
+    }
+
+    .link p {
+      margin-top: 10px;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .link:hover img {
+      transform: scale(0.95);
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      25% { background-position: 100% 50%; }
+      50% { background-position: 100% 0%; }
+      75% { background-position: 0% 0%; }
+      100% { background-position: 0% 50%; }
+    }
+	
+	 #canvas1 {
+      display: block;
+      margin: 0 auto;
+	  position: auto;
+	  
+	 #canvas2 {
+      display: block;
+      margin: 0 auto;
+	  position: related;
+    }
+	
+	
+	
+ 
+	 
+	 
+ 
